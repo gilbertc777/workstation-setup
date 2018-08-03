@@ -1,9 +1,21 @@
-# Terrform OCI Settings
+#!/bin/bash
+# Terrform OCI Settings Template
+
+# Setup tenancy
 export TF_VAR_tenancy_ocid=
 export TF_VAR_user_ocid=
 export TF_VAR_compartment_ocid=
 export TF_VAR_fingerprint=
+
+# Setup API key
 export TF_VAR_private_key_path=~/.oci/oci_api_key.pem
+export TF_VAR_private_key_password=
+
+# Setup Regions
 export TF_VAR_region=us-ashburn-1
+
+# Setup TF ssh key
 export TF_VAR_ssh_public_key_path=~/.ssh/id_rsa.pub
+export TF_VAR_ssh_public_key==~/.ssh/id_rsa.pub
 export TF_VAR_ssh_private_key_path=~/.ssh/id_rsa
+export TF_VAR_ssh_private_key==~/.ssh/id_rsa
